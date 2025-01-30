@@ -14,33 +14,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .bg-custom-gradient {
+            background-image: linear-gradient(to bottom, #FFFFFF, #EFE3E3);
+        }
+    </style>style>
 </head>
 
 <body data-theme="light" class="font-sora">
-    <header>
-        <nav class="mx-auto container h-[6.875rem] flex items-center">
+    <header class="mb-12">
+        <nav class="mx-auto container h-[6.875rem] flex items-center mb-16">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <img class="btn btn-ghost text-xl" src="assets/logo-header.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-xl text-[#AAAAAA]">
-                        <li class="hover:scale-105 transition-all ease-out duration-500"><a class="hover:bg-white hover:text-black">Product</a></li>
-                        <li class="hover:scale-105 transition-all ease-out duration-500"><a class="hover:bg-white hover:text-black">Services</a></li>
-                        <li class="hover:scale-105 transition-all ease-out duration-500"><a class="hover:bg-white hover:text-black">Contact us</a></li>
+                        <li class="hover:scale-105 transition-all ease-out duration-500"><a
+                                class="hover:bg-white hover:text-black">Product</a></li>
+                        <li class="hover:scale-105 transition-all ease-out duration-500"><a
+                                class="hover:bg-white hover:text-black">Services</a></li>
+                        <li class="hover:scale-105 transition-all ease-out duration-500"><a
+                                class="hover:bg-white hover:text-black">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end gap-3">
                     <i class="fa-solid fa-magnifying-glass hidden lg:block mr-6 scale-125 cursor-pointer"></i>
                     <i class="fa-solid fa-cart-shopping hidden lg:block mr-6 scale-125 cursor-pointer"></i>
-                    <button class="btn hidden lg:flex px-8 py-3 rounded-lgb border-1 border-[#179800] bg-white hover:bg-[#179800] hover:text-white transition-all ease-out duration-700">Login</button>
-                    <button class="btn hidden lg:flex px-8 py-3 rounded-lg w-36  hover:border-1 hover:border-[#179800] bg-[#179800] text-white hover:bg-white hover:text-[#179800] transition-all ease-out duration-700">Register</button>
+                    <button
+                        class="btn hidden lg:flex px-8 py-3 rounded-lgb border-1 border-[#179800] bg-white hover:bg-[#179800] hover:text-white transition-all ease-out duration-700">Login</button>
+                    <button
+                        class="btn hidden lg:flex px-8 py-3 rounded-lg w-36  hover:border-1 hover:border-[#179800] bg-[#179800] text-white hover:bg-white hover:text-[#179800] transition-all ease-out duration-700">Register</button>
                     <i class="fa-solid fa-bars mr-3 lg:hidden scale-150 cursor-pointer"></i>
                 </div>
             </div>
         </nav>
-        <section>
-
+        <section class="bg-custom-gradient">
+            <div class="text-center">
+                <h1 class=" font-bold text-3xl lg:text-5xl mb-8 ">Freshness <span class="text-[#179800]">You Can <br>
+                        Count </span>On, Prices You’ll Love!</h1>
+                <p class="text-[#AAA] font-normal lg:text-xl mb-8 mx-2 text-base">Shop your daily essentials at
+                    unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div
+                class="container mx-auto flex justify-center items-center max-w-4xl  object-cover border border-dashed border-slate">
+                <img src="assets/hero-vegetables.png" alt="">
+            </div>
         </section>
     </header>
     <main>
