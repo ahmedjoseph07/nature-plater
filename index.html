@@ -18,6 +18,10 @@
         .bg-custom-gradient {
             background-image: linear-gradient(to bottom, #FFFFFF, #EFE3E3);
         }
+
+        .bg-green-gradient {
+            background: linear-gradient(to bottom right, #15803d, #4ade80);
+        }
     </style>
 </head>
 
@@ -26,7 +30,8 @@
         <nav class="mx-auto container h-[6.875rem] flex items-center mb-16">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <img class="btn btn-ghost text-xl" src="assets/logo-header.png" alt="">
+                    <img class="btn btn-ghost text-xl hidden lg:block" src="assets/logo-header.png" alt="">
+                    <img class="btn btn-ghost text-xl lg:hidden" src="assets/nav.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-xl text-[#AAAAAA]">
@@ -64,7 +69,7 @@
     </header>
     <main>
         <!-- Services -->
-        <section class="container mx-auto mb-36">
+        <section class="container mx-auto mb-12 lg:mb-36">
             <h2 class="font-semibold text-2xl lg:text-4xl text-[#179800] mb-12 mx-4">Services</h2>
             <div class="flex gap-7 flex-col lg:flex-row mx-4">
                 <div
@@ -117,7 +122,195 @@
 
             </div>
         </section>
+
+        <!-- Products -->
+        <section class="bg-[#EFEBE3] mb-32 ">
+            <div class="container mx-auto w-full">
+                <h2 class="font-semibold text-2xl lg:text-4xl text-[#179800] mb-12 mx-4 pt-2 ">Popular Products</h2>
+                <div class="mx-2 flex flex-col lg:flex-row gap-5">
+
+                    <div class="lg:flex-1 bg-green-gradient rounded-lg relative h-[400px] lg:h-auto md:hidden lg:block">
+                        <div class="ml-3 lg:ml-12 mt-4 lg:mt-24">
+                            <h2 class="text-3xl font-bold text-white mb-6">30% off</h2>
+                            <p class="text-md mb-6">Discover a new world of treat, toys and <br> essenstials handpicked
+                                for</p>
+                            <button
+                                class="transition-all duration-700 ease text-bold text-lg bg-white hover:bg-[#179800] text-black px-12 py-4 rounded hover:text-white">Buy
+                                Now</button>
+                        </div>
+                        <div class="mt-2 absolute bottom-1 right-1"><img src="assets/vegetable-offer.png" alt="veg">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 grid-row-4 lg:grid-cols-3 Lg:grid-rows-3 gap-3 lg:gap-6">
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/onion.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Onion 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/potato.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Potato 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/onion.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Onion 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/tomato.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Toamto 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/onion.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Onion 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/potato.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Potato 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/tomato.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Tomato 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/potato.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Potato 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div
+                                class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
+                                <figure>
+                                    <img class="bg-[#EFEBE3] rounded-md mx-4 lg:mx-0 " src="assets/onion.png"
+                                        alt="Movie" />
+                                </figure>
+                                <div class="card-body px-0 lg:p-8">
+                                    <h2 class="card-title text-xs"><i class="fa-solid fa-star"
+                                            style="color: #FFD43B;"></i> 4.5
+                                    </h2>
+                                    <p class="text-sm">Onion 1 KG</p>
+                                    <p class="text-sm">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Arrival -->
+        <section>
+
+        </section>
     </main>
+
     <footer>
 
     </footer>
