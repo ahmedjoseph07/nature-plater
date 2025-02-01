@@ -10,7 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -124,10 +126,10 @@
         </section>
 
         <!-- Products -->
-        <section class="bg-[#EFEBE3] mb-32 ">
+        <section class="bg-[#EFEBE3] mb-30 ">
             <div class="container mx-auto w-full">
                 <h2 class="font-semibold text-2xl lg:text-4xl text-[#179800] mb-12 mx-4 pt-2 ">Popular Products</h2>
-                <div class="mx-2 flex flex-col lg:flex-row gap-5">
+                <div class="mx-2 flex flex-col lg:flex-row gap-5 pb-6">
 
                     <div class="lg:flex-1 bg-green-gradient rounded-lg relative h-[400px] lg:h-auto md:hidden lg:block">
                         <div class="ml-3 lg:ml-12 mt-4 lg:mt-24">
@@ -279,7 +281,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="hidden lg:flex">
                             <div
                                 class="card card-side bg-base-100 shadow-xl px-0 lg:px-12 hover:scale-105 transition-all ease duration-700 cursor-pointer">
                                 <figure>
@@ -306,9 +308,35 @@
         </section>
 
         <!-- Arrival -->
-        <section>
+        <section class="container mx-auto w-full mb-12 lg:mb-36">
+            <h2 class="font-semibold text-2xl lg:text-4xl text-[#179800] mb-12 mx-4 pt-2 ">Arrival & Offer</h2>
 
+            <div class="flex flex-col lg:flex-row gap-3 mx-2">
+                <div class="flex lg:w-[60%] bg-[#115414] rounded-lg">
+                    <div class="flex justify-center items-center flex-col flex-grow -lg:ml-16">
+                        <img src="/assets/dawat-logo.png" alt="">
+                        <div class="poppins px-1 text-xs lg:text-lg lg:px-10 my-6 py-3 rounded-md bg-[#63B76D] text-white cursor-pointer">Cook Exotic Dishes</div>
+                        <h3 class="font-normal text-xs lg:text-3xl text-white">UP to <span class="font-extrabold">20% OFF</span> </h3>
+                    </div>
+                    <div class="flex justify-end p-3 items-center">
+                        <img src="assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex lg:w-[40%] bg-[#102861] rounded-lg">
+                    <div class="ml-4 mt-2">
+                        <img src="/assets/india-gate-logo.png" alt="">
+                        <div class="poppins px-1 text-xs lg:text-lg lg:px-10 my-6 py-3 rounded-md bg-[#2A4D97] text-white cursor-pointer">Cook Exotic Dishes</div>
+                        <h3 class="font-normal text-xs lg:text-3xl text-white">UP to <span class="font-extrabold">20% OFF</span> </h3>
+                    </div>
+                    <div class="flex justify-end p-3 items-center ml-12">
+                        <img src="assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+
+            </div>
         </section>
+        
     </main>
 
     <footer>
@@ -320,6 +348,7 @@
                 extend: {
                     fontFamily: {
                         sora: ["Sora", "sans-serif"],
+                        poppins:["Poppins", serif]
                     },
                 },
             },
